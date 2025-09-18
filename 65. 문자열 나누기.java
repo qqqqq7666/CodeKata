@@ -1,6 +1,6 @@
 class Solution {
     public int solution(String s) {
-        int answer = 0, firstCnt = 0, diffCnt = 0, idx = 0;
+        int answer = 0, firstCnt = 0, diffCnt = 0;
         char firstChar = s.charAt(0);
         char[] sArray = s.toCharArray();
         for(int i = 0; i < sArray.length; i++) {
