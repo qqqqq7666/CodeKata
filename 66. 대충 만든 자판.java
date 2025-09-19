@@ -9,11 +9,13 @@ class Solution {
                     if (key.indexOf(c) >= 0 && key.indexOf(c) < minCnt)
                         minCnt = key.indexOf(c) + 1;
                 }
+                if(minCnt == Integer.MAX_VALUE) {
+                    res = -1;
+                    break;
+                }
                 res += minCnt;
                 minCnt = Integer.MAX_VALUE;
             }
-            if (res <= 0 || res == Integer.MAX_VALUE)
-                res = -1;
             answer[i] = res;
             res = 0;
         }
